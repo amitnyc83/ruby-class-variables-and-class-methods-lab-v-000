@@ -2,6 +2,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
+  @@genre_count ={}
 
   attr_accessor :name, :artist, :genre
 
@@ -25,6 +26,16 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+
+  def genre_count(genre, count)
+    if @@genre_count[genre] != nil
+      @@genre_count[genre] << count
+    else
+      @@genre_count[genre] = [count]
+    end  
+  end
+  
 
 
 
