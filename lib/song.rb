@@ -1,3 +1,6 @@
+require 'pry'
+
+
 class Song
   @@count = 0
   @@artists = []
@@ -29,6 +32,7 @@ class Song
 
 
   def self.genre_count(genre, count)
+    binding.pry
     if @@genre_count[genre] != nil
       @@genre_count[genre] << count
     else
