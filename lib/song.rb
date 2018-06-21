@@ -28,7 +28,7 @@ class Song
   end
 
 
-  def genre_count(genre, count)
+  def genre_count
     if @@genre_count[genre] != nil
       @@genre_count[genre] << count
     else
