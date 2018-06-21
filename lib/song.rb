@@ -33,9 +33,9 @@ class Song
       @@genre_count[genre] << count
     else
       @@genre_count[genre] = [count]
-    end  
+    end
   end
-  
+
 
 
 
