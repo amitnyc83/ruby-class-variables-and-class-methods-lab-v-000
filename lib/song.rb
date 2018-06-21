@@ -32,9 +32,7 @@ class Song
 
 
   def self.genre_count(genre, count)
-
     if @@genre_count[genre] != nil
-      binding.pry
       @@genre_count[genre] << count
     else
       @@genre_count[genre] = [count]
